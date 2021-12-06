@@ -39,12 +39,12 @@ main {
     margin: auto;
     height: 7em;
     width: 25em;
-    background: rgb(255, 216, 179);
+    background: rgb(230, 184, 141);
     border-radius: 30px;
     text-align: center;
 }
 .result-message:after {
-    border: 20px solid rgb(255, 216, 179);
+    border: 20px solid rgb(230, 184, 141);
     content: '';
     border-left-color: transparent;
     border-bottom-color: transparent;
