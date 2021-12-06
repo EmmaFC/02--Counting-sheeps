@@ -1,24 +1,44 @@
 /* Counting sheeps & wolfs */
 
+/* 
+
+let countSheepImg = document.createElement('img')
+countSheepImg.src = "./assets/img/sheep-count.png";
+document.getElementById('surprise').appendChild(countSheepImg);
+
+let countWolfImg = document.createElement('img')
+countWolfImg.src = "./assets/img/wolf-count.png";
+document.getElementById('surprise').appendChild(countWolfImg); */
+
+
 let btnAddSheep = document.getElementById('btn_add_sheep');
 let btnAddWolf = document.getElementById('btn_add_wolf');
 let btnCountSheeps = document.getElementById('btn_count_sheeps');
 let btnCountWolfs = document.getElementById('btn_count_wolfs');
 let btnCountAnimals = document.getElementById('btn_count_animals');
-const animals = []
+const animals = [];
 
 btnAddSheep.addEventListener('click', () =>
 {
     animals.push(true);
     console.log(animals); 
     document.getElementById("message_shown").innerHTML = "...";
+    let addSheepImg = document.createElement('img')
+    addSheepImg.src = "./assets/img/sheep-add.png";
+    addSheepImg.style.width = "10%";
+    document.getElementById('animals-display').appendChild(addSheepImg);
 });
 
 btnAddWolf.addEventListener('click', () =>
 {
-   animals.push(false);
-   console.log(animals);
-   document.getElementById("message_shown").innerHTML = "...";
+    animals.push(false);
+    console.log(animals);
+    document.getElementById("message_shown").innerHTML = "..."; 
+    let addWolfImg = document.createElement('img')
+    addWolfImg.src = "./assets/img/wolf-add.png";
+    addWolfImg.style.width = "10%";
+    document.getElementById('animals-display').appendChild(addWolfImg);
+
 });
 
  btnCountSheeps.addEventListener('click', () =>
