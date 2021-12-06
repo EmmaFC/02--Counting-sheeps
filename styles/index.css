@@ -59,7 +59,7 @@ main {
     color: white;
     font-family: nimbus-sans;
     font-weight:600;
-    font-size: 3.1em;
+    font-size: 1.1em;
     letter-spacing: 0.06em;
 
 }
@@ -78,7 +78,7 @@ button {
     padding:1% 1.5%;
     font-family: nimbus-sans;
     font-weight:600;
-    font-size: 3.1em;
+    font-size: 1.1em;
     letter-spacing: 0.06em;
     border-radius: 10px;
 }
