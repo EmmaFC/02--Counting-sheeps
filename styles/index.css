@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(255, 241, 212);
+}
+
+button {
+    padding:2.5% 3%;
+    background-color: white;
+    font-family: sans-serif;
+    font-weight:500;
+    font-size: 3vw;
+    letter-spacing: 0.06em;
+    border-radius: 4%;
+}
