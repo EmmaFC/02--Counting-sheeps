@@ -10,41 +10,54 @@ btnAddSheep.addEventListener('click', () =>{
     animals.push(true);
     console.log("sheeps ready to be added")
     console.log(animals); 
+    document.getElementById("message_shown").innerHTML = "...";
 });
 
 btnAddWolf.addEventListener('click', () =>{
    animals.push(false);
    console.log("wolfs ready to be added")
    console.log(animals);
+   document.getElementById("message_shown").innerHTML = "...";
 });
 
  btnCountSheeps.addEventListener('click', () =>{
     let numberOfSheeps = animals.filter(item => item === true).length;
     if(animals.length >= 1 && numberOfSheeps == 1){
     console.log("There is " + numberOfSheeps + " sheep");
+    
+    document.getElementById("message_shown").innerHTML = "There is " + numberOfSheeps + " sheep";
+
     return;
     }
+
     if (animals.length >= 1){
     numberOfSheeps = animals.filter(item => item === true).length;
     console.log("There are " + numberOfSheeps + " sheeps");
+
+    document.getElementById("message_shown").innerHTML = "There are " + numberOfSheeps + " sheeps";
     return;
     }
     console.log("Please, introduce some animals!")
+    document.getElementById("message_shown").innerHTML =  "Please, introduce some animals!";
  });
  
  btnCountWolfs.addEventListener('click', () =>{
     let numberOfWolfs = animals.filter(item => item === false).length;
     if(animals.length >= 1 && numberOfWolfs == 1){
         console.log("There is " + numberOfWolfs + " wolf");
+        
+        document.getElementById("message_shown").innerHTML = "There is " + numberOfWolfs + " wolf";        
         return;
         }
     if(animals.length >= 1){
     numberOfSheeps = animals.filter(item => item === true).length;
     let AlsoNumberOfWolfs = animals.length - numberOfSheeps
     console.log("There are " + AlsoNumberOfWolfs + " wolfs (counting wolfs in another way)");
+    document.getElementById("message_shown").innerHTML = "There are " + AlsoNumberOfWolfs + " wolfs";
     return;
     }
     console.log("Please, introduce some animals!")
+    document.getElementById("message_shown").innerHTML = "Please, introduce some animals!";
  }); 
 
  btnCountAnimals.addEventListener("click", () =>{
@@ -52,9 +65,11 @@ btnAddWolf.addEventListener('click', () =>{
     let numberOfWolfs = animals.filter(item => item === false).length;
     let numberOfSheeps = animals.filter(item => item === true).length;
     console.log("There are " + numberOfSheeps + " sheeps and " + numberOfWolfs + " wolfs");
+    document.getElementById("message_shown").innerHTML = "There are " + numberOfSheeps + " sheeps and " + numberOfWolfs + " wolfs";
     return;
     }
     console.log("Please, introduce some animals!")
+    document.getElementById("message_shown").innerHTML = "Please, introduce some animals!";
  }); 
     
 /* // Practicando con bucles 
@@ -87,3 +102,13 @@ while (animals.length <= x){
     let countingSheeps3= "oveja " + x;
     console.log(countingSheeps3)
 } */
+
+
+
+
+
+
+
+
+
+

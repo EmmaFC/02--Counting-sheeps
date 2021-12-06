@@ -5,16 +5,114 @@
     text-decoration: none;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background-color: rgb(255, 241, 212);
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+main {
+    width: 80%;
+    height: 85vh;
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    margin:auto;
+}
+
+.results {
+    position: absolute;
+    width:80%;
+    top:7%;
+    margin:0;
+}
+
+.result-message {
+    display: flex;
+    margin: auto;
+    height: 7em;
+    width: 25em;
+    background: rgb(255, 216, 179);
+    border-radius: 30px;
+    text-align: center;
+}
+.result-message:after {
+    border: 20px solid rgb(255, 216, 179);
+    content: '';
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    bottom: -38px;
+    left: calc(50% - 25px)
+}
+
+#message_shown {
+    margin: auto;
+    color: white;
+    font-family: nimbus-sans;
+    font-weight:600;
+    font-size: 1.1em;
+    letter-spacing: 0.06em;
+
+}
+
+
+#adding-animals {
+    text-align:center;
+}
+
+#counting-animals {
+    text-align:center;
 }
 
 button {
-    padding:2.5% 3%;
-    background-color: white;
-    font-family: sans-serif;
-    font-weight:500;
-    font-size: 3vw;
+    margin:0.5%;
+    padding:1% 1.5%;
+    font-family: nimbus-sans;
+    font-weight:600;
+    font-size: 1.1em;
     letter-spacing: 0.06em;
-    border-radius: 4%;
+    border-radius: 10px;
 }
+
+#adding-animals button {
+    background-color: white;
+    color:rgb(228, 169, 129);
+    width: 25.2vw;
+    padding: 1.2%;
+}
+
+#counting-animals button {
+    background-color: rgb(255, 213, 179);
+    color:rgb(173, 128, 98);
+    width: 16.5vw;
+   
+}
+
+#adding-animals button:hover {
+    background-color: rgb(255, 197, 159);
+    color: white;
+}
+
+#counting-animals button:hover {
+    background-color: rgb(255, 197, 159);
+    color: white;
+}
+
+#adding-animals button:active {
+    background-color: rgb(255, 213, 179);
+}
+
+#counting-animals button:active {
+    background-color: rgb(255, 210, 173);
+    color: white;
+}
+
